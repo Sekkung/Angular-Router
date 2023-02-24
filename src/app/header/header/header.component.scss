@@ -1,0 +1,28 @@
+.space{
+  flex: 1 1 auto;
+}
+.fxLayout{
+  display: flex;
+  position: relative;
+}
+.imgicon{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+}
+.app-toolbar{
+  position: sticky;
+  position: -webkit-sticky;
+  background-color: white;
+  z-index: 1000;
+}
+
+.bt-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+

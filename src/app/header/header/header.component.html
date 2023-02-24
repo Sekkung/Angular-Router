@@ -1,0 +1,33 @@
+
+<div class="contaier-fluid">
+  <img
+    class="imgicon"
+    src="https://upload.wikimedia.org/wikipedia/commons/c/cb/SF_Cinema_logo.jpg"
+  />
+</div>
+<div class="container">
+  <mat-toolbar class="app-toolbar">
+    <div class="bt-center">
+      <button mat-button><span class="font-thai" routerLink="/movie">หน้าแรก</span></button>
+      <button mat-button [matMenuTriggerFor]="menu">
+        <span class="font-thai">ภาพยนต์</span>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item [routerLink]="['/movie',{ outlets:{ movie : ['kimestu']}}]">ดาบพิฆาตอสูร : สู่หมู่บ้านช่างตีดาบ</button>
+        <button mat-menu-item [routerLink]="['/movie',{ outlets:{ movie : ['slime']}}]">เกิดใหม่ทั้งทีก็เป็นสไลม์ไปซะแล้ว เดอะมูฟวี่</button>
+        <button mat-menu-item [routerLink]="['/movie',{ outlets:{ movie : ['puss']}}]">Puss in boots 2</button>
+      </mat-menu>
+      <button mat-button><span class="font-thai">โรงภาพยนต์</span></button>
+      <button mat-button><span class="font-thai">โปรโมชั่น</span></button>
+      <button mat-button><span class="font-thai">โบว์ลิ่งและเพลง</span></button>
+      <button mat-button><span class="font-thai">ข่าวและกิจกรรม</span></button>
+      <button mat-button><span class="font-thai">เทศกาลภาพยนต์</span></button>
+      <button mat-button><span class="font-thai">SF+</span></button>
+      <button mat-button>
+        <span class="font-thai">นโยบายข้อมูลส่วนบุลคล</span>
+      </button>
+    </div>
+  </mat-toolbar>
+</div>
+
+
